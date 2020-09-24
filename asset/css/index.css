@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  font-family: "EB Garamond", serif;
+  font-size: 62.5%;
+  color: white;
+}
+body {
+  background-color: rgb(40, 39, 49);
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+}
+.switchStyle {
+  position: fixed;
+  top: 18.5rem;
+  left: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.switchStyle ul li {
+  border-radius: 50%;
+  width: 50px;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  list-style: none;
+}
+.switchStyle #black:hover,
+.switchStyle #white:hover,
+.switchStyle #initial:hover {
+  color: rgb(57, 255, 20);
+}
+.switchStyle #black {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+.switchStyle #white {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.switchStyle #initial {
+  background-color: rgb(40, 39, 49);
+  color: white;
+  border: 2px solid white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+/* Mes réalisations : */
+#realisations {
+  margin-top: 3rem;
+}
+#realisations .prod {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 5%;
+}
+#realisations hr {
+  width: 80%;
+  margin: auto;
+}
+#realisations .prod li {
+  width: 100%;
+}
+#realisations li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  min-width: 200px;
+}
+#realisations img {
+  padding: 1rem;
+  width: 100px;
+}
+#realisations p {
+  margin-top: 0rem;
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+#realisations a {
+  text-decoration: none;
+  color: rgb(131, 131, 131);
+}
+#realisations a:hover {
+  color: yellow;
+}
+
+/* Mon CV : */
+#cv {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+#cv nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.training,
+.profil,
+.experiences,
+.diplomas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  background-color: rgba(75, 75, 75, 0.5);
+  border-radius: 50%;
+  max-width: 35rem;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: rgba(50, 50, 50, 0.5);
+  border-radius: 50%;
+  max-width: 35rem;
+}
+.skills li {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 1px 15px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+#cv h3 {
+  text-align: center;
+  font-size: 2.7rem;
+  color: rgb(171, 185, 185);
+  font-weight: bolder;
+  text-shadow: 5px 2px 5px black;
+}
+#cv hr {
+  width: 80%;
+  margin: auto;
+}
+#cv nav div a {
+  text-decoration: none;
+}
+.skills img {
+  width: 5rem;
+}
+
+/* parcours : */
+#infos {
+  width: 95%;
+  margin: auto;
+  padding-top: 2rem;
+}
+#infos article {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#infos section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#infos section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#infos p {
+  font-size: 2rem;
+  text-align: justify;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.sud {
+  position: relative;
+  margin-top: 2rem;
+}
+#infos img[alt="S. JOHNSON"] {
+  display: block;
+  width: 65%;
+}
+#infos img[alt="SAMUEL JOHNSON"] {
+  display: none;
+}
+
+/* contact : */
+#contact {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+#contact h3 {
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  font-size: 2.3rem;
+}
+
+/* pour formulaire contact : */
+form {
+  margin: auto;
+  width: 95%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form div {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1rem;
+}
+label {
+  width: 100%;
+  text-align: left;
+  font-size: 2rem;
+}
+input,
+textarea {
+  font: 2rem sans-serif;
+  width: 100%;
+  min-width: 250px;
+  border: 1px solid #999;
+}
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+button {
+  font-size: 1.8rem;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin: 0.5rem 0.5rem;
+}
+
+/* bouton retour en haut de la page : */
+#returnTop,
+#returnTop img {
+  display: none;
+}
+
+/* div {
+  border: 1px solid red;
+} */
+
+/*Styles spécifiques pour les grands écrans type écrans d'ordinateur*/
+@media (min-width: 980px) {
+  h2 {
+    font-size: 5rem;
+  }
+  .switchStyle {
+    top: 45rem;
+    left: 4rem;
+    font-size: 1.8rem;
+  }
+  .switchStyle ul li {
+    width: 75px;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+
+  /* mise en page réalisations : */
+  #realisations {
+    max-width: 75%;
+    margin: auto;
+    min-height: 940px;
+    margin-top: 2rem;
+  }
+  #realisations .prod {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  #realisations hr {
+    display: none;
+  }
+  #realisations .prod li {
+    max-width: 30%;
+  }
+  #realisations li div {
+    width: 100%;
+    min-height: 200px;
+  }
+  #realisations img {
+    padding: 1rem;
+    width: 200px;
+  }
+  #realisations p {
+    margin-top: 2rem;
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+
+  /* mise en page cv : */
+  #cv {
+    max-width: 80%;
+    margin: auto;
+    min-height: 940px;
+    margin-top: 2rem;
+  }
+  #cv nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  #cv nav div {
+    max-width: 30%;
+    padding: 0.7rem 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  #cv h3 {
+    font-size: 3rem;
+  }
+  #cv nav ul {
+    font-size: 2.5rem;
+    max-width: 100%;
+  }
+  .skills img {
+    width: 75px;
+  }
+
+  /* parcours : */
+  #infos {
+    max-width: 75%;
+    margin: auto;
+    min-height: 940px;
+  }
+  #infos article {
+    margin-bottom: 2rem;
+  }
+  #infos section {
+    padding: 1rem;
+  }
+  .sud {
+    margin-top: 0;
+  }
+  #infos p {
+    font-size: 2.5rem;
+  }
+  #infos img[alt="S. JOHNSON"] {
+    display: none;
+  }
+  #infos img[alt="SAMUEL JOHNSON"] {
+    display: block;
+    position: sticky;
+    width: 85%;
+    margin-left: 1rem;
+  }
+
+  /* contact */
+  #contact {
+    min-height: 850px;
+  }
+  form {
+    width: 500px;
+    margin-bottom: 8rem;
+  }
+  form div {
+    margin: 2rem;
+  }
+  label {
+    min-width: 90px;
+  }
+  input,
+  textarea {
+    min-width: 260px;
+  }
+
+  /* bouton retour en haut de la page : */
+  #returnTop {
+    display: block;
+    position: fixed;
+    bottom: 6rem;
+    right: 5rem;
+    background-color: aqua;
+    border-radius: 50%;
+  }
+  #returnTop img {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+}

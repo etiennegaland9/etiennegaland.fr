@@ -1,0 +1,38 @@
+.liens,
+.liens ul li a {
+  display: none;
+}
+
+/*Styles spécifiques pour les grands écrans type écrans d'ordinateur*/
+@media (min-width: 980px) {
+  .liens {
+    display: block;
+    padding: 1rem;
+  }
+  .liens ul {
+    position: fixed;
+    top: 5rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .liens ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  .liens ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 3rem;
+    color: inherit;
+    text-shadow: 10px 5px 5px rgb(57, 255, 20);
+  }
+  .liens ul li a:hover {
+    color: red;
+  }
+  .liens .arrow {
+    font-size: 10rem;
+    padding-top: 1.5rem;
+  }
+}

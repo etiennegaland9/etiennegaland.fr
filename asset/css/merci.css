@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.thank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    to right bottom,
+    rgb(0, 174, 255) 20%,
+    rgb(10, 0, 146) 30%,
+    rgb(10, 0, 146) 45%,
+    rgb(0, 9, 90) 55%,
+    rgb(0, 9, 90) 70%,
+    black 80%
+  );
+  background: linear-gradient(
+    to right bottom,
+    rgb(0, 174, 255) 20%,
+    rgb(10, 0, 146) 30% 45%,
+    rgb(0, 9, 90) 55% 70%,
+    black 80%
+  );
+  min-height: 834px;
+  font-family: "Lobster";
+  color: white;
+}
+.thank h1 {
+  font-size: 6rem;
+  margin-top: 10rem;
+}
+.thank p {
+  width: 100%;
+  margin: auto;
+  font-size: 2.2rem;
+  margin-top: 10rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.thank h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 15rem;
+}
+.thank a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Style adjustments for viewports that meet the condition */
+@media (min-width: 780px) {
+  .thank {
+    min-height: 780px;
+  }
+}
+
+/* Style adjustments for viewports that meet the condition */
+@media (min-width: 1480px) {
+  .thank {
+    min-height: 937px;
+  }
+}

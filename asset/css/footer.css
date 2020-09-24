@@ -1,0 +1,48 @@
+/* css du footer : */
+footer {
+  margin-top: auto;
+}
+footer hr {
+  background-color: rgb(200, 200, 200);
+}
+.endPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: inherit;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 1rem;
+}
+.endPage div {
+  margin: 1rem;
+}
+.endPage a {
+  text-decoration: none;
+  color: inherit;
+}
+.networks {
+  width: 100%;
+}
+.networks ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.networks li {
+  list-style: none;
+}
+.networks img {
+  border-radius: 5px;
+}
+
+/*Styles spécifiques pour les grands écrans type écrans d'ordinateur*/
+@media (min-width: 980px) {
+  .endPage {
+    font-size: 2.5rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .networks {
+    display: none;
+  }
+}
